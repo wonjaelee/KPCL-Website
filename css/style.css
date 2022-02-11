@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Readex+Pro:wght@700&display=swap");
+
+/* -webkit-text-stroke: 1px black; */
+
+/* COLORS
+
+COLOR NAMES: HEX NUMBER
+blue-gradient: #312CB9
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2d2d2d;
+  padding: 50px;
+}
+
+main {
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+}
+
+button {
+  border: none;
+}
+
+.header {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right bottom, #312cb9, transparent),
+    url(../Image/image1-1.jpg);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  position: relative;
+  z-index: 0;
+}
+
+.header_logo {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 150px;
+  color: transparent;
+  -webkit-text-stroke: 4px #f9f9f9;
+  margin-left: 150px;
+  z-index: 999;
+}
+
+.header_logo::after {
+  content: "";
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  border: 15px solid #ff0000;
+  position: absolute;
+  top: 50px;
+  left: -30px;
+  z-index: -1;
+}
+
+.header_nav {
+  height: 50px;
+  display: flex;
+  background-color: thistle;
+  align-items: center;
+}
+
+.header_sns {
+  margin-right: 50px;
+  display: flex;
+}
+
+.header_icon {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  margin-right: 10px;
+}
+
+.header_btn {
+  width: 250px;
+  height: 70px;
+  border-radius: 70px;
+  margin-right: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_small_text {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* **********************
+
+     SECION - INTRO
+
+*********************** */
+
+/* **********************
+     INTRO - UPPER
+*********************** */
+
+.section_intro {
+  margin-top: 50px;
+}
+
+.intro_upper {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.intro_upper::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Image/cross-pattern-1.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+.intro_upper > * {
+  flex-basis: 40%;
+}
+
+.intro_upper-text-heading {
+  font-size: 30px;
+  letter-spacing: -1px;
+  color: #11114d;
+}
+
+.intro_upper-text-heading .text-top span {
+  font-size: 48px;
+  color: blue;
+  font-weight: 900;
+}
+
+.intro_upper-text-heading .text-bottom {
+  margin-top: -20px;
+}
+
+.intro_upper-text-description {
+  font-size: 25px;
+  line-height: 31px;
+  color: #11114d;
+  margin-top: 30px;
+  padding-right: 100px;
+}
+
+/* **********************
+     INTRO - LOWER
+*********************** */
+
+.intro_lower {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.intro_lower-col {
+  display: flex;
+  flex-basis: 200px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro_lower-col:not(:last-child) {
+  margin-right: 30px;
+}
+
+.intro_lower-col > h2 {
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* icon container */
+.intro_lower-col-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+
+.intro_lower-col-icon::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 80%;
+  border: 3px solid #f9f9f9;
+  border-radius: 100%;
+  transform: translate(6px, -44px);
+}
+
+/* icon */
+.intro_icon {
+  fill: #f9f9f9;
+  width: 50px;
+  height: 50px;
+}
+
+/* col-1 */
+.col-1-icon-container {
+  background-color: #11114d;
+}
+
+.icon_college {
+  transform: translate(22px, 20px);
+}
+
+.col-1-text {
+  color: #171766;
+}
+
+.col-1-text span {
+  font-size: 40px;
+  color: #0c0c42;
+}
+
+/* col-2 */
+.col-2-icon-container {
+  background-color: #163ce7;
+}
+
+.icon_children {
+  transform: translate(20px, 20px);
+}
+
+.col-2-text {
+  color: #1b3edb;
+}
+
+.col-2-text span {
+  font-size: 40px;
+  color: #1111e2;
+}
+
+/* col-3 */
+.col-3-icon-container {
+  background-color: #e7165c;
+}
+
+.icon_family {
+  transform: translate(20px, 24px);
+}
+
+.col-3-text {
+  color: #ee477f;
+}
+
+.col-3-text span {
+  font-size: 40px;
+  color: #e7165c;
+}
+
+/* col-4 */
+.col-4-icon-container {
+  background-color: #2ee716;
+}
+
+.icon_community {
+  transform: translate(18px, 18px);
+}
+
+.col-4-text {
+  color: #54e441;
+}
+.col-4-text span {
+  font-size: 40px;
+  color: #2ee716;
+}
+
+/* **********************
+
+     SECTION - TOUR
+
+*********************** */
+
+.section_tour {
+  width: 100%;
+  height: 750px;
+  background-color: aqua;
+  margin-top: 100px;
+  position: relative;
+}
+
+/* images */
+.section_tour-image {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_tour-image-top {
+  height: 65%;
+  display: flex;
+}
+
+.section_tour-image-bottom {
+  height: 35%;
+  display: flex;
+}
+
+.section_tour-image-top-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_tour-image-top-left > div {
+  height: 50%;
+}
+
+.section_tour-image-top-left-1 {
+  background-image: url(../Image/image3-1.jpg);
+  background-size: cover;
+}
+
+.section_tour-image-top-left-2 {
+  background-image: url(../Image/image3-2.jpg);
+  background-size: cover;
+}
+
+.section_tour-image-top-right {
+  width: 70%;
+  background-image: url(../Image/image3-3.jpg);
+  background-size: cover;
+}
+
+.section_tour-image-bottom-left,
+.section_tour-image-bottom-right {
+  width: 50%;
+}
+
+.section_tour-image-bottom-left {
+  background-image: url(../Image/image3-4.jpg);
+  background-size: cover;
+}
+
+.section_tour-image-bottom-right {
+  background-image: url(../Image/image3-5.jpg);
+  background-size: cover;
+}
+
+/* texts */
+.section_tour-text {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1313dba4;
+}
+
+.title_kor-upper,
+.title_kor-lower {
+  font-size: 90px;
+}
+
+.title_kor-upper {
+  color: #f9f9f9;
+  font-weight: 900;
+}
+
+.title_kor-lower {
+  margin-top: -65px;
+  color: transparent;
+  -webkit-text-stroke: 3px #f9f9f9;
+}
+
+.title_eng-upper {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #f9f9f9;
+}
+
+.title_eng-upper span {
+  color: transparent;
+  -webkit-text-stroke: 2px #f9f9f9;
+  margin-right: 10px;
+}
+
+.title_eng-lower {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #f9f9f9;
+  margin-top: -20px;
+}
+
+.section_tour-btn {
+  width: 350px;
+  height: 70px;
+  border-radius: 70px;
+  background-color: #ff0000;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn_tour_text {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f9f9f9;
+  letter-spacing: 1px;
+}
+
+.btn_tour_icon {
+  fill: #f9f9f9;
+  width: 40px;
+  height: 40px;
+}
+
+/* **********************
+
+     SECTION - ACTIVITY
+
+*********************** */
+
+.section_activity {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.section_activity::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Image/cross-pattern-1.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+.section_activity > div {
+  width: 25%;
+  height: 400px;
+  background-color: aquamarine;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.section_activity > div:not(:last-child) {
+  margin-right: 50px;
+}
+
+.section_activity-col-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
